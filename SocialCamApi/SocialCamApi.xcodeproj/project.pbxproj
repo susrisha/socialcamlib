@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1F2E13160993E900B94276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F2E12160993E900B94276 /* UIKit.framework */; };
+		CF1F2E15160993E900B94276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F2E14160993E900B94276 /* Foundation.framework */; };
+		CF1F2E17160993E900B94276 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F2E16160993E900B94276 /* CoreGraphics.framework */; };
+		CF1F2E1D160993E900B94276 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E1B160993E900B94276 /* InfoPlist.strings */; };
+		CF1F2E1F160993E900B94276 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E1E160993E900B94276 /* main.m */; };
+		CF1F2E23160993E900B94276 /* SCAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E22160993E900B94276 /* SCAAppDelegate.m */; };
+		CF1F2E26160993E900B94276 /* SCAMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E25160993E900B94276 /* SCAMasterViewController.m */; };
+		CF1F2E29160993E900B94276 /* SCADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E28160993E900B94276 /* SCADetailViewController.m */; };
+		CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */; };
+		CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF1F2E0E160993E900B94276 /* SocialCamApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCamApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1F2E12160993E900B94276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF1F2E14160993E900B94276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF1F2E16160993E900B94276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF1F2E1A160993E900B94276 /* SocialCamApi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialCamApi-Info.plist"; sourceTree = "<group>"; };
+		CF1F2E1C160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF1F2E1E160993E900B94276 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF1F2E20160993E900B94276 /* SocialCamApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialCamApi-Prefix.pch"; sourceTree = "<group>"; };
+		CF1F2E21160993E900B94276 /* SCAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAAppDelegate.h; sourceTree = "<group>"; };
+		CF1F2E22160993E900B94276 /* SCAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAAppDelegate.m; sourceTree = "<group>"; };
+		CF1F2E24160993E900B94276 /* SCAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAMasterViewController.h; sourceTree = "<group>"; };
+		CF1F2E25160993E900B94276 /* SCAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAMasterViewController.m; sourceTree = "<group>"; };
+		CF1F2E27160993E900B94276 /* SCADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCADetailViewController.h; sourceTree = "<group>"; };
+		CF1F2E28160993E900B94276 /* SCADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCADetailViewController.m; sourceTree = "<group>"; };
+		CF1F2E2B160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCAMasterViewController.xib; sourceTree = "<group>"; };
+		CF1F2E2E160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCADetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1F2E0B160993E900B94276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F2E13160993E900B94276 /* UIKit.framework in Frameworks */,
+				CF1F2E15160993E900B94276 /* Foundation.framework in Frameworks */,
+				CF1F2E17160993E900B94276 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1F2E03160993E900B94276 = {
+			isa = PBXGroup;
+			children = (
+				CF1F2E18160993E900B94276 /* SocialCamApi */,
+				CF1F2E11160993E900B94276 /* Frameworks */,
+				CF1F2E0F160993E900B94276 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF1F2E0F160993E900B94276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2E0E160993E900B94276 /* SocialCamApi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1F2E11160993E900B94276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2E12160993E900B94276 /* UIKit.framework */,
+				CF1F2E14160993E900B94276 /* Foundation.framework */,
+				CF1F2E16160993E900B94276 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1F2E18160993E900B94276 /* SocialCamApi */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2E21160993E900B94276 /* SCAAppDelegate.h */,
+				CF1F2E22160993E900B94276 /* SCAAppDelegate.m */,
+				CF1F2E24160993E900B94276 /* SCAMasterViewController.h */,
+				CF1F2E25160993E900B94276 /* SCAMasterViewController.m */,
+				CF1F2E27160993E900B94276 /* SCADetailViewController.h */,
+				CF1F2E28160993E900B94276 /* SCADetailViewController.m */,
+				CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */,
+				CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */,
+				CF1F2E19160993E900B94276 /* Supporting Files */,
+			);
+			path = SocialCamApi;
+			sourceTree = "<group>";
+		};
+		CF1F2E19160993E900B94276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2E1A160993E900B94276 /* SocialCamApi-Info.plist */,
+				CF1F2E1B160993E900B94276 /* InfoPlist.strings */,
+				CF1F2E1E160993E900B94276 /* main.m */,
+				CF1F2E20160993E900B94276 /* SocialCamApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF1F2E0D160993E900B94276 /* SocialCamApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1F2E32160993E900B94276 /* Build configuration list for PBXNativeTarget "SocialCamApi" */;
+			buildPhases = (
+				CF1F2E0A160993E900B94276 /* Sources */,
+				CF1F2E0B160993E900B94276 /* Frameworks */,
+				CF1F2E0C160993E900B94276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialCamApi;
+			productName = SocialCamApi;
+			productReference = CF1F2E0E160993E900B94276 /* SocialCamApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF1F2E05160993E900B94276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCA;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Sukeerthi LLC Ltd.";
+			};
+			buildConfigurationList = CF1F2E08160993E900B94276 /* Build configuration list for PBXProject "SocialCamApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1F2E03160993E900B94276;
+			productRefGroup = CF1F2E0F160993E900B94276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF1F2E0D160993E900B94276 /* SocialCamApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1F2E0C160993E900B94276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F2E1D160993E900B94276 /* InfoPlist.strings in Resources */,
+				CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */,
+				CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF1F2E0A160993E900B94276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F2E1F160993E900B94276 /* main.m in Sources */,
+				CF1F2E23160993E900B94276 /* SCAAppDelegate.m in Sources */,
+				CF1F2E26160993E900B94276 /* SCAMasterViewController.m in Sources */,
+				CF1F2E29160993E900B94276 /* SCADetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF1F2E1B160993E900B94276 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1F2E1C160993E900B94276 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1F2E2B160993E900B94276 /* en */,
+			);
+			name = SCAMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1F2E2E160993E900B94276 /* en */,
+			);
+			name = SCADetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF1F2E30160993E900B94276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CF1F2E31160993E900B94276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF1F2E33160993E900B94276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialCamApi/SocialCamApi-Prefix.pch";
+				INFOPLIST_FILE = "SocialCamApi/SocialCamApi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF1F2E34160993E900B94276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialCamApi/SocialCamApi-Prefix.pch";
+				INFOPLIST_FILE = "SocialCamApi/SocialCamApi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF1F2E08160993E900B94276 /* Build configuration list for PBXProject "SocialCamApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1F2E30160993E900B94276 /* Debug */,
+				CF1F2E31160993E900B94276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1F2E32160993E900B94276 /* Build configuration list for PBXNativeTarget "SocialCamApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1F2E33160993E900B94276 /* Debug */,
+				CF1F2E34160993E900B94276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF1F2E05160993E900B94276 /* Project object */;
+}
