@@ -20,7 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
+    self.detailViewManager = [[DetailViewManager alloc]init];
     SCAMasterViewController *masterViewController = [[SCAMasterViewController alloc] initWithNibName:@"SCAMasterViewController" bundle:nil];
     UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
 
@@ -33,7 +33,13 @@
     self.splitViewController.delegate = detailViewController;
     self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
     self.window.rootViewController = self.splitViewController;
+    masterViewController.mainSplitController = self.splitViewController;
     
+    self.detailViewManager.splitViewController = self.splitViewController;
+    self.detailViewManager.detailViewController = detailViewController;
+    self.splitViewController.delegate = self.detailViewManager;
+    if ([self.splitViewController respondsToSelector:@selector(setPresentsWithGesture:)])
+        [self.splitViewController setPresentsWithGesture:YES];
     
     // Check and load the login url
     

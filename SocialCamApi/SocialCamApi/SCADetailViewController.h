@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SCADetailViewController : UIViewController <UISplitViewControllerDelegate>
+#import "DetailViewManager.h"
+@interface SCADetailViewController : UIViewController <UISplitViewControllerDelegate,SubstitutableDetailViewController>
 
 @property (strong, nonatomic) id detailItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (nonatomic, retain) UIBarButtonItem *navigationPaneBarButtonItem;
 @end

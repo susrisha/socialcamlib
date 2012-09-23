@@ -42,6 +42,10 @@
 		CF909C83160F0A1F00B0C1EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C82160F0A1F00B0C1EA /* QuartzCore.framework */; };
 		CF909C85160F0A2600B0C1EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C84160F0A2600B0C1EA /* SystemConfiguration.framework */; };
 		CF909C87160F0A4200B0C1EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C86160F0A4200B0C1EA /* Security.framework */; };
+		CF909C8B160F3A8000B0C1EA /* SCAUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */; };
+		CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */; };
+		CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C92160F420E00B0C1EA /* DetailViewManager.m */; };
+		CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +111,13 @@
 		CF909C82160F0A1F00B0C1EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CF909C84160F0A2600B0C1EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CF909C86160F0A4200B0C1EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF909C88160F3A7F00B0C1EA /* SCAUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAUserProfileViewController.h; sourceTree = "<group>"; };
+		CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAUserProfileViewController.m; sourceTree = "<group>"; };
+		CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAUserProfileViewController.xib; sourceTree = "<group>"; };
+		CF909C91160F420E00B0C1EA /* DetailViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewManager.h; sourceTree = "<group>"; };
+		CF909C92160F420E00B0C1EA /* DetailViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewManager.m; sourceTree = "<group>"; };
+		CF909C94160F4D6600B0C1EA /* LoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingIndicator.h; sourceTree = "<group>"; };
+		CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingIndicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +172,10 @@
 		CF1F2E18160993E900B94276 /* SocialCamApi */ = {
 			isa = PBXGroup;
 			children = (
+				CF909C94160F4D6600B0C1EA /* LoadingIndicator.h */,
+				CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */,
+				CF909C91160F420E00B0C1EA /* DetailViewManager.h */,
+				CF909C92160F420E00B0C1EA /* DetailViewManager.m */,
 				CF909C54160EED2E00B0C1EA /* SocialCam */,
 				CF909C2E160EEC6500B0C1EA /* MKNetworkKit */,
 				CF1F2E21160993E900B94276 /* SCAAppDelegate.h */,
@@ -172,6 +187,9 @@
 				CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */,
 				CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */,
 				CF1F2E19160993E900B94276 /* Supporting Files */,
+				CF909C88160F3A7F00B0C1EA /* SCAUserProfileViewController.h */,
+				CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */,
+				CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */,
 			);
 			path = SocialCamApi;
 			sourceTree = "<group>";
@@ -299,6 +317,7 @@
 				CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */,
 				CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */,
 				CF909C7F160F095400B0C1EA /* LoginViewController.xib in Resources */,
+				CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +352,9 @@
 				CF909C73160F034F00B0C1EA /* SCAUtilities.m in Sources */,
 				CF909C7A160F06EB00B0C1EA /* SCAConfig.m in Sources */,
 				CF909C7E160F095400B0C1EA /* LoginViewController.m in Sources */,
+				CF909C8B160F3A8000B0C1EA /* SCAUserProfileViewController.m in Sources */,
+				CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */,
+				CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 
 #import "SCADetailViewController.h"
 #import "SCAUtilities.h"
+#import "SCAUserProfileViewController.h"
 
 @interface SCAMasterViewController () {
     NSMutableArray *_objects;
@@ -152,8 +153,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    self.detailViewController.detailItem = object;
+     DetailViewManager *detailViewManager = (DetailViewManager*)self.splitViewController.delegate;
+    SCAUserProfileViewController *aUserProfileController= [[SCAUserProfileViewController alloc]initWithNibName:@"SCAUserProfileViewController" bundle:nil];
+    aUserProfileController.userIdentifier = @"self";
+    detailViewManager.detailViewController = aUserProfileController;
+    
 }
 
 @end

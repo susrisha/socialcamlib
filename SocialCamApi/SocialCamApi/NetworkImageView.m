@@ -47,6 +47,9 @@
                                                                [self.layer addAnimation:animation forKey:nil];
                                                               
                                                                self.image = fetchedImage;
+                                                                self.layer.shadowColor = [UIColor blackColor].CGColor;
+                                                                self.layer.shadowOffset = CGSizeMake(0, 1);
+                                                                self.layer.shadowOpacity = 5.0;
                                                               
                                                                }
                                                                //self.image = fetchedImage;

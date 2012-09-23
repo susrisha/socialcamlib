@@ -45,6 +45,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    if (_navigationPaneBarButtonItem)
+        [self.navigationItem setLeftBarButtonItem:_navigationPaneBarButtonItem];
 }
 
 - (void)viewDidUnload
@@ -66,11 +68,37 @@
     }
     return self;
 }
+
+#pragma mark -
+#pragma mark SubstitutableDetailViewController
+
+// -------------------------------------------------------------------------------
+//	setNavigationPaneBarButtonItem:
+//  Custom implementation for the navigationPaneBarButtonItem setter.
+//  In addition to updating the _navigationPaneBarButtonItem ivar, it
+//  reconfigures the toolbar to either show or hide the
+//  navigationPaneBarButtonItem.
+// -------------------------------------------------------------------------------
+- (void)setNavigationPaneBarButtonItem:(UIBarButtonItem *)navigationPaneBarButtonItem
+{
+    if (navigationPaneBarButtonItem != _navigationPaneBarButtonItem) {
+        if (navigationPaneBarButtonItem)
+            [self.navigationItem setLeftBarButtonItem:navigationPaneBarButtonItem];
+        else
+            [self.navigationItem setLeftBarButtonItem:nil];
+        
+        
+        
+    }
+}
+
+
 							
 #pragma mark - Split view
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
+    NSLog(@"Configuring detail view....");
     barButtonItem.title = NSLocalizedString(@"Master", @"Master");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
