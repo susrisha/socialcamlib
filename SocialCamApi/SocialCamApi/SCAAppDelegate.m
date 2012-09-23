@@ -11,6 +11,8 @@
 #import "SCAMasterViewController.h"
 
 #import "SCADetailViewController.h"
+#import "LoginViewController.h"
+#import "SCAUtilities.h"
 
 @implementation SCAAppDelegate
 
@@ -31,7 +33,21 @@
     self.splitViewController.delegate = detailViewController;
     self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
     self.window.rootViewController = self.splitViewController;
+    
+    
+    // Check and load the login url
+    
     [self.window makeKeyAndVisible];
+    if (![SCAUtilities isLoggedIn]) {
+        NSLog(@"Not logged in. have to show login view.");
+        LoginViewController *aLoginController = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+        aLoginController.modalPresentationStyle = UIModalPresentationFormSheet;
+        [detailNavigationController presentModalViewController:aLoginController animated:YES];
+    }
+    else{
+        // put up a logged in notification.
+        [SCAUtilities notifyLoggedIn];
+    }
     return YES;
 }
 
