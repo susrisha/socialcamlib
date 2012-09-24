@@ -46,6 +46,8 @@
 		CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */; };
 		CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C92160F420E00B0C1EA /* DetailViewManager.m */; };
 		CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */; };
+		CF9133B5160F5DC6003E0F2A /* SCAVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */; };
+		CF9133B6160F5DC6003E0F2A /* SCAVideoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,9 @@
 		CF909C92160F420E00B0C1EA /* DetailViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewManager.m; sourceTree = "<group>"; };
 		CF909C94160F4D6600B0C1EA /* LoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingIndicator.h; sourceTree = "<group>"; };
 		CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingIndicator.m; sourceTree = "<group>"; };
+		CF9133B2160F5DC5003E0F2A /* SCAVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAVideoListViewController.h; sourceTree = "<group>"; };
+		CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAVideoListViewController.m; sourceTree = "<group>"; };
+		CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAVideoListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,9 @@
 				CF909C88160F3A7F00B0C1EA /* SCAUserProfileViewController.h */,
 				CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */,
 				CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */,
+				CF9133B2160F5DC5003E0F2A /* SCAVideoListViewController.h */,
+				CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */,
+				CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */,
 			);
 			path = SocialCamApi;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */,
 				CF909C7F160F095400B0C1EA /* LoginViewController.xib in Resources */,
 				CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */,
+				CF9133B6160F5DC6003E0F2A /* SCAVideoListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +364,7 @@
 				CF909C8B160F3A8000B0C1EA /* SCAUserProfileViewController.m in Sources */,
 				CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */,
 				CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */,
+				CF9133B5160F5DC6003E0F2A /* SCAVideoListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
