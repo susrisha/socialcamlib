@@ -34,6 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Video list";
+    [[LoadingIndicator currentIndicator]displayActivity:@"Loading.."];
     // Do any additional setup after loading the view from its nib.
     [[SocialCamEngine sharedEngine]videosForPath:self.videosPath onCompletion:^(NSMutableArray *videoObjects) {
         
@@ -68,20 +70,25 @@
 {
     static NSString *CellIdentifier = @"Cell";
     NetworkImageView *videoImage ;
+    UILabel *nameLabel ;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         videoImage = [[NetworkImageView alloc]initWithFrame:CGRectMake(5, 5, 40, 40)];
         videoImage.tag = 456;
+        nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(55, 5, 400, 40)];
+        nameLabel.tag = 786;
         [cell.contentView addSubview:videoImage];
+        [cell.contentView addSubview:nameLabel];
     }
     videoImage = (NetworkImageView*)[cell.contentView viewWithTag:456];
-    
+    nameLabel = (UILabel*)[cell.contentView viewWithTag:786];
     
     // NSDate *object = [_objects objectAtIndex:indexPath.row];
     SocialCamVideo *currentVideo = [currentVideosArray objectAtIndex:indexPath.row];
     [videoImage setImageUrl:[NSURL URLWithString:currentVideo.small_thumb.url]];
-    cell.textLabel.text = currentVideo.title;//[currentVideosArray objectAtIndex:indexPath.row];//[object description];
+    nameLabel.text = currentVideo.title;
+    //cell.textLabel.text = currentVideo.title;//[currentVideosArray objectAtIndex:indexPath.row];//[object description];
     return cell;
 }
 

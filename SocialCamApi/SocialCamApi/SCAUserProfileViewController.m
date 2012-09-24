@@ -52,7 +52,7 @@
     followingCount.text =[NSString stringWithFormat:@"%d", self.currentUser.counts.followers];
     followsCount.text =[NSString stringWithFormat:@"%d", self.currentUser.counts.following];
     mediaCountLabel.text = [NSString stringWithFormat:@"%d", self.currentUser.counts.public_videos];
-    userIdField.text = self.currentUser.userIdentifier;
+    userIdField.text = self.userIdentifier;
 }
 
 

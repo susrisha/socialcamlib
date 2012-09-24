@@ -48,7 +48,7 @@
         NSLog(@"Not logged in. have to show login view.");
         LoginViewController *aLoginController = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
         aLoginController.modalPresentationStyle = UIModalPresentationFormSheet;
-        [detailNavigationController presentModalViewController:aLoginController animated:YES];
+        [detailViewController presentModalViewController:aLoginController animated:YES];
     }
     else{
         // put up a logged in notification.

@@ -11,6 +11,8 @@
 #import "SCADetailViewController.h"
 #import "SCAUtilities.h"
 #import "SCAUserProfileViewController.h"
+#import "SCAVideoListViewController.h"
+
 
 @interface SCAMasterViewController () {
     NSMutableArray *_objects;
@@ -148,15 +150,57 @@
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
+ //8SlaDUlr
 }
 */
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
      DetailViewManager *detailViewManager = (DetailViewManager*)self.splitViewController.delegate;
-    SCAUserProfileViewController *aUserProfileController= [[SCAUserProfileViewController alloc]initWithNibName:@"SCAUserProfileViewController" bundle:nil];
-    aUserProfileController.userIdentifier = @"self";
-    detailViewManager.detailViewController = aUserProfileController;
+    switch (indexPath.row) {
+        case 0:
+        {
+            SCAUserProfileViewController *aUserProfileController= [[SCAUserProfileViewController alloc]initWithNibName:@"SCAUserProfileViewController" bundle:nil];
+            aUserProfileController.userIdentifier = @"8SlaDUIr";
+            detailViewManager.detailViewController = aUserProfileController;
+            
+        }
+            break;
+        case 1:
+            {
+                SCAUserProfileViewController *aUserProfileController= [[SCAUserProfileViewController alloc]initWithNibName:@"SCAUserProfileViewController" bundle:nil];
+                aUserProfileController.userIdentifier = @"self";
+                detailViewManager.detailViewController = aUserProfileController;
+            }
+            break;
+        case 2:
+        {
+            SCAVideoListViewController *aVideoListController = [[SCAVideoListViewController alloc]initWithNibName:@"SCAVideoListViewController" bundle:nil];
+            aVideoListController.videosPath = @"users/8SlaDUIr/videos"; // you can replace it with user id or just "self"
+            detailViewManager.detailViewController = aVideoListController;
+        }
+            break;
+        case 3:
+        {
+            SCAVideoListViewController *aVideoListController = [[SCAVideoListViewController alloc]initWithNibName:@"SCAVideoListViewController" bundle:nil];
+            aVideoListController.videosPath = @"users/self/feed";
+            detailViewManager.detailViewController = aVideoListController;
+        }
+            break;
+        case 4:
+        {
+            SCAVideoListViewController *aVideoListController = [[SCAVideoListViewController alloc]initWithNibName:@"SCAVideoListViewController" bundle:nil];
+            aVideoListController.videosPath = @"users/self/likes";
+            detailViewManager.detailViewController = aVideoListController;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    
     
 }
 
