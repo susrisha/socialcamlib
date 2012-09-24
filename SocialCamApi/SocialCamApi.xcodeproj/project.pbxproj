@@ -17,6 +17,37 @@
 		CF1F2E29160993E900B94276 /* SCADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E28160993E900B94276 /* SCADetailViewController.m */; };
 		CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */; };
 		CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */; };
+		CF909C47160EECC700B0C1EA /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C35160EECC700B0C1EA /* NSDate+RFC1123.m */; };
+		CF909C48160EECC700B0C1EA /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C37160EECC700B0C1EA /* NSData+Base64.m */; };
+		CF909C49160EECC700B0C1EA /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C39160EECC700B0C1EA /* NSDictionary+RequestEncoding.m */; };
+		CF909C4A160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C3B160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.m */; };
+		CF909C4B160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C3D160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.m */; };
+		CF909C4C160EECC700B0C1EA /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C3F160EECC700B0C1EA /* MKNetworkEngine.m */; };
+		CF909C4D160EECC700B0C1EA /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C42160EECC700B0C1EA /* MKNetworkOperation.m */; };
+		CF909C4E160EECC700B0C1EA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C44160EECC700B0C1EA /* Reachability.m */; };
+		CF909C4F160EECC700B0C1EA /* NetworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C46160EECC700B0C1EA /* NetworkImageView.m */; };
+		CF909C69160EEE5000B0C1EA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C5A160EEE5000B0C1EA /* Comment.m */; };
+		CF909C6A160EEE5000B0C1EA /* Counts.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C5C160EEE5000B0C1EA /* Counts.m */; };
+		CF909C6B160EEE5000B0C1EA /* MainThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C5E160EEE5000B0C1EA /* MainThumb.m */; };
+		CF909C6C160EEE5000B0C1EA /* PeopleTagged.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C60160EEE5000B0C1EA /* PeopleTagged.m */; };
+		CF909C6D160EEE5000B0C1EA /* SmallThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C62160EEE5000B0C1EA /* SmallThumb.m */; };
+		CF909C6E160EEE5000B0C1EA /* SocialCamVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C64160EEE5000B0C1EA /* SocialCamVideo.m */; };
+		CF909C6F160EEE5000B0C1EA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C66160EEE5000B0C1EA /* User.m */; };
+		CF909C70160EEE5000B0C1EA /* SocialCamEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C68160EEE5000B0C1EA /* SocialCamEngine.m */; };
+		CF909C73160F034F00B0C1EA /* SCAUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C72160F034F00B0C1EA /* SCAUtilities.m */; };
+		CF909C7A160F06EB00B0C1EA /* SCAConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C79160F06EB00B0C1EA /* SCAConfig.m */; };
+		CF909C7E160F095400B0C1EA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C7C160F095400B0C1EA /* LoginViewController.m */; };
+		CF909C7F160F095400B0C1EA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF909C7D160F095400B0C1EA /* LoginViewController.xib */; };
+		CF909C81160F0A1900B0C1EA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C80160F0A1900B0C1EA /* CFNetwork.framework */; };
+		CF909C83160F0A1F00B0C1EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C82160F0A1F00B0C1EA /* QuartzCore.framework */; };
+		CF909C85160F0A2600B0C1EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C84160F0A2600B0C1EA /* SystemConfiguration.framework */; };
+		CF909C87160F0A4200B0C1EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF909C86160F0A4200B0C1EA /* Security.framework */; };
+		CF909C8B160F3A8000B0C1EA /* SCAUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */; };
+		CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */; };
+		CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C92160F420E00B0C1EA /* DetailViewManager.m */; };
+		CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */; };
+		CF9133B5160F5DC6003E0F2A /* SCAVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */; };
+		CF9133B6160F5DC6003E0F2A /* SCAVideoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +67,62 @@
 		CF1F2E28160993E900B94276 /* SCADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCADetailViewController.m; sourceTree = "<group>"; };
 		CF1F2E2B160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCAMasterViewController.xib; sourceTree = "<group>"; };
 		CF1F2E2E160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCADetailViewController.xib; sourceTree = "<group>"; };
+		CF909C34160EECC700B0C1EA /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		CF909C35160EECC700B0C1EA /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		CF909C36160EECC700B0C1EA /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		CF909C37160EECC700B0C1EA /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		CF909C38160EECC700B0C1EA /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		CF909C39160EECC700B0C1EA /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		CF909C3A160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		CF909C3B160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		CF909C3C160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		CF909C3D160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		CF909C3E160EECC700B0C1EA /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		CF909C3F160EECC700B0C1EA /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		CF909C40160EECC700B0C1EA /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		CF909C41160EECC700B0C1EA /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		CF909C42160EECC700B0C1EA /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		CF909C43160EECC700B0C1EA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CF909C44160EECC700B0C1EA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CF909C45160EECC700B0C1EA /* NetworkImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkImageView.h; sourceTree = "<group>"; };
+		CF909C46160EECC700B0C1EA /* NetworkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkImageView.m; sourceTree = "<group>"; };
+		CF909C59160EEE5000B0C1EA /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		CF909C5A160EEE5000B0C1EA /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		CF909C5B160EEE5000B0C1EA /* Counts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counts.h; sourceTree = "<group>"; };
+		CF909C5C160EEE5000B0C1EA /* Counts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counts.m; sourceTree = "<group>"; };
+		CF909C5D160EEE5000B0C1EA /* MainThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainThumb.h; sourceTree = "<group>"; };
+		CF909C5E160EEE5000B0C1EA /* MainThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainThumb.m; sourceTree = "<group>"; };
+		CF909C5F160EEE5000B0C1EA /* PeopleTagged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTagged.h; sourceTree = "<group>"; };
+		CF909C60160EEE5000B0C1EA /* PeopleTagged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTagged.m; sourceTree = "<group>"; };
+		CF909C61160EEE5000B0C1EA /* SmallThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallThumb.h; sourceTree = "<group>"; };
+		CF909C62160EEE5000B0C1EA /* SmallThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallThumb.m; sourceTree = "<group>"; };
+		CF909C63160EEE5000B0C1EA /* SocialCamVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialCamVideo.h; sourceTree = "<group>"; };
+		CF909C64160EEE5000B0C1EA /* SocialCamVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialCamVideo.m; sourceTree = "<group>"; };
+		CF909C65160EEE5000B0C1EA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CF909C66160EEE5000B0C1EA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CF909C67160EEE5000B0C1EA /* SocialCamEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialCamEngine.h; sourceTree = "<group>"; };
+		CF909C68160EEE5000B0C1EA /* SocialCamEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialCamEngine.m; sourceTree = "<group>"; };
+		CF909C71160F034F00B0C1EA /* SCAUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAUtilities.h; sourceTree = "<group>"; };
+		CF909C72160F034F00B0C1EA /* SCAUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAUtilities.m; sourceTree = "<group>"; };
+		CF909C78160F06EB00B0C1EA /* SCAConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAConfig.h; sourceTree = "<group>"; };
+		CF909C79160F06EB00B0C1EA /* SCAConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAConfig.m; sourceTree = "<group>"; };
+		CF909C7B160F095400B0C1EA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CF909C7C160F095400B0C1EA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CF909C7D160F095400B0C1EA /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CF909C80160F0A1900B0C1EA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CF909C82160F0A1F00B0C1EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF909C84160F0A2600B0C1EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF909C86160F0A4200B0C1EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF909C88160F3A7F00B0C1EA /* SCAUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAUserProfileViewController.h; sourceTree = "<group>"; };
+		CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAUserProfileViewController.m; sourceTree = "<group>"; };
+		CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAUserProfileViewController.xib; sourceTree = "<group>"; };
+		CF909C91160F420E00B0C1EA /* DetailViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewManager.h; sourceTree = "<group>"; };
+		CF909C92160F420E00B0C1EA /* DetailViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewManager.m; sourceTree = "<group>"; };
+		CF909C94160F4D6600B0C1EA /* LoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingIndicator.h; sourceTree = "<group>"; };
+		CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingIndicator.m; sourceTree = "<group>"; };
+		CF9133B2160F5DC5003E0F2A /* SCAVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAVideoListViewController.h; sourceTree = "<group>"; };
+		CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAVideoListViewController.m; sourceTree = "<group>"; };
+		CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAVideoListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF909C87160F0A4200B0C1EA /* Security.framework in Frameworks */,
+				CF909C85160F0A2600B0C1EA /* SystemConfiguration.framework in Frameworks */,
+				CF909C83160F0A1F00B0C1EA /* QuartzCore.framework in Frameworks */,
+				CF909C81160F0A1900B0C1EA /* CFNetwork.framework in Frameworks */,
 				CF1F2E13160993E900B94276 /* UIKit.framework in Frameworks */,
 				CF1F2E15160993E900B94276 /* Foundation.framework in Frameworks */,
 				CF1F2E17160993E900B94276 /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +146,10 @@
 		CF1F2E03160993E900B94276 = {
 			isa = PBXGroup;
 			children = (
+				CF909C86160F0A4200B0C1EA /* Security.framework */,
+				CF909C84160F0A2600B0C1EA /* SystemConfiguration.framework */,
+				CF909C82160F0A1F00B0C1EA /* QuartzCore.framework */,
+				CF909C80160F0A1900B0C1EA /* CFNetwork.framework */,
 				CF1F2E18160993E900B94276 /* SocialCamApi */,
 				CF1F2E11160993E900B94276 /* Frameworks */,
 				CF1F2E0F160993E900B94276 /* Products */,
@@ -82,6 +177,12 @@
 		CF1F2E18160993E900B94276 /* SocialCamApi */ = {
 			isa = PBXGroup;
 			children = (
+				CF909C94160F4D6600B0C1EA /* LoadingIndicator.h */,
+				CF909C95160F4D6700B0C1EA /* LoadingIndicator.m */,
+				CF909C91160F420E00B0C1EA /* DetailViewManager.h */,
+				CF909C92160F420E00B0C1EA /* DetailViewManager.m */,
+				CF909C54160EED2E00B0C1EA /* SocialCam */,
+				CF909C2E160EEC6500B0C1EA /* MKNetworkKit */,
 				CF1F2E21160993E900B94276 /* SCAAppDelegate.h */,
 				CF1F2E22160993E900B94276 /* SCAAppDelegate.m */,
 				CF1F2E24160993E900B94276 /* SCAMasterViewController.h */,
@@ -91,6 +192,12 @@
 				CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */,
 				CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */,
 				CF1F2E19160993E900B94276 /* Supporting Files */,
+				CF909C88160F3A7F00B0C1EA /* SCAUserProfileViewController.h */,
+				CF909C89160F3A7F00B0C1EA /* SCAUserProfileViewController.m */,
+				CF909C8A160F3A8000B0C1EA /* SCAUserProfileViewController.xib */,
+				CF9133B2160F5DC5003E0F2A /* SCAVideoListViewController.h */,
+				CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */,
+				CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */,
 			);
 			path = SocialCamApi;
 			sourceTree = "<group>";
@@ -104,6 +211,62 @@
 				CF1F2E20160993E900B94276 /* SocialCamApi-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF909C2E160EEC6500B0C1EA /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF909C34160EECC700B0C1EA /* NSDate+RFC1123.h */,
+				CF909C35160EECC700B0C1EA /* NSDate+RFC1123.m */,
+				CF909C36160EECC700B0C1EA /* NSData+Base64.h */,
+				CF909C37160EECC700B0C1EA /* NSData+Base64.m */,
+				CF909C38160EECC700B0C1EA /* NSDictionary+RequestEncoding.h */,
+				CF909C39160EECC700B0C1EA /* NSDictionary+RequestEncoding.m */,
+				CF909C3A160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.h */,
+				CF909C3B160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.m */,
+				CF909C3C160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.h */,
+				CF909C3D160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.m */,
+				CF909C3E160EECC700B0C1EA /* MKNetworkEngine.h */,
+				CF909C3F160EECC700B0C1EA /* MKNetworkEngine.m */,
+				CF909C40160EECC700B0C1EA /* MKNetworkKit.h */,
+				CF909C41160EECC700B0C1EA /* MKNetworkOperation.h */,
+				CF909C42160EECC700B0C1EA /* MKNetworkOperation.m */,
+				CF909C43160EECC700B0C1EA /* Reachability.h */,
+				CF909C44160EECC700B0C1EA /* Reachability.m */,
+				CF909C45160EECC700B0C1EA /* NetworkImageView.h */,
+				CF909C46160EECC700B0C1EA /* NetworkImageView.m */,
+			);
+			name = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		CF909C54160EED2E00B0C1EA /* SocialCam */ = {
+			isa = PBXGroup;
+			children = (
+				CF909C7B160F095400B0C1EA /* LoginViewController.h */,
+				CF909C7C160F095400B0C1EA /* LoginViewController.m */,
+				CF909C7D160F095400B0C1EA /* LoginViewController.xib */,
+				CF909C59160EEE5000B0C1EA /* Comment.h */,
+				CF909C5A160EEE5000B0C1EA /* Comment.m */,
+				CF909C5B160EEE5000B0C1EA /* Counts.h */,
+				CF909C5C160EEE5000B0C1EA /* Counts.m */,
+				CF909C5D160EEE5000B0C1EA /* MainThumb.h */,
+				CF909C5E160EEE5000B0C1EA /* MainThumb.m */,
+				CF909C5F160EEE5000B0C1EA /* PeopleTagged.h */,
+				CF909C60160EEE5000B0C1EA /* PeopleTagged.m */,
+				CF909C61160EEE5000B0C1EA /* SmallThumb.h */,
+				CF909C62160EEE5000B0C1EA /* SmallThumb.m */,
+				CF909C63160EEE5000B0C1EA /* SocialCamVideo.h */,
+				CF909C64160EEE5000B0C1EA /* SocialCamVideo.m */,
+				CF909C65160EEE5000B0C1EA /* User.h */,
+				CF909C66160EEE5000B0C1EA /* User.m */,
+				CF909C67160EEE5000B0C1EA /* SocialCamEngine.h */,
+				CF909C68160EEE5000B0C1EA /* SocialCamEngine.m */,
+				CF909C71160F034F00B0C1EA /* SCAUtilities.h */,
+				CF909C72160F034F00B0C1EA /* SCAUtilities.m */,
+				CF909C78160F06EB00B0C1EA /* SCAConfig.h */,
+				CF909C79160F06EB00B0C1EA /* SCAConfig.m */,
+			);
+			name = SocialCam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +324,9 @@
 				CF1F2E1D160993E900B94276 /* InfoPlist.strings in Resources */,
 				CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */,
 				CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */,
+				CF909C7F160F095400B0C1EA /* LoginViewController.xib in Resources */,
+				CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */,
+				CF9133B6160F5DC6003E0F2A /* SCAVideoListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +341,30 @@
 				CF1F2E23160993E900B94276 /* SCAAppDelegate.m in Sources */,
 				CF1F2E26160993E900B94276 /* SCAMasterViewController.m in Sources */,
 				CF1F2E29160993E900B94276 /* SCADetailViewController.m in Sources */,
+				CF909C47160EECC700B0C1EA /* NSDate+RFC1123.m in Sources */,
+				CF909C48160EECC700B0C1EA /* NSData+Base64.m in Sources */,
+				CF909C49160EECC700B0C1EA /* NSDictionary+RequestEncoding.m in Sources */,
+				CF909C4A160EECC700B0C1EA /* NSString+MKNetworkKitAdditions.m in Sources */,
+				CF909C4B160EECC700B0C1EA /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				CF909C4C160EECC700B0C1EA /* MKNetworkEngine.m in Sources */,
+				CF909C4D160EECC700B0C1EA /* MKNetworkOperation.m in Sources */,
+				CF909C4E160EECC700B0C1EA /* Reachability.m in Sources */,
+				CF909C4F160EECC700B0C1EA /* NetworkImageView.m in Sources */,
+				CF909C69160EEE5000B0C1EA /* Comment.m in Sources */,
+				CF909C6A160EEE5000B0C1EA /* Counts.m in Sources */,
+				CF909C6B160EEE5000B0C1EA /* MainThumb.m in Sources */,
+				CF909C6C160EEE5000B0C1EA /* PeopleTagged.m in Sources */,
+				CF909C6D160EEE5000B0C1EA /* SmallThumb.m in Sources */,
+				CF909C6E160EEE5000B0C1EA /* SocialCamVideo.m in Sources */,
+				CF909C6F160EEE5000B0C1EA /* User.m in Sources */,
+				CF909C70160EEE5000B0C1EA /* SocialCamEngine.m in Sources */,
+				CF909C73160F034F00B0C1EA /* SCAUtilities.m in Sources */,
+				CF909C7A160F06EB00B0C1EA /* SCAConfig.m in Sources */,
+				CF909C7E160F095400B0C1EA /* LoginViewController.m in Sources */,
+				CF909C8B160F3A8000B0C1EA /* SCAUserProfileViewController.m in Sources */,
+				CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */,
+				CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */,
+				CF9133B5160F5DC6003E0F2A /* SCAVideoListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +490,7 @@
 				CF1F2E34160993E900B94276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

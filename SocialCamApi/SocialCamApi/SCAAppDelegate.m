@@ -11,6 +11,8 @@
 #import "SCAMasterViewController.h"
 
 #import "SCADetailViewController.h"
+#import "LoginViewController.h"
+#import "SCAUtilities.h"
 
 @implementation SCAAppDelegate
 
@@ -18,7 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
+    self.detailViewManager = [[DetailViewManager alloc]init];
     SCAMasterViewController *masterViewController = [[SCAMasterViewController alloc] initWithNibName:@"SCAMasterViewController" bundle:nil];
     UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
 
@@ -31,7 +33,27 @@
     self.splitViewController.delegate = detailViewController;
     self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil ];
     self.window.rootViewController = self.splitViewController;
+    masterViewController.mainSplitController = self.splitViewController;
+    
+    self.detailViewManager.splitViewController = self.splitViewController;
+    self.detailViewManager.detailViewController = detailViewController;
+    self.splitViewController.delegate = self.detailViewManager;
+    if ([self.splitViewController respondsToSelector:@selector(setPresentsWithGesture:)])
+        [self.splitViewController setPresentsWithGesture:YES];
+    
+    // Check and load the login url
+    
     [self.window makeKeyAndVisible];
+    if (![SCAUtilities isLoggedIn]) {
+        NSLog(@"Not logged in. have to show login view.");
+        LoginViewController *aLoginController = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+        aLoginController.modalPresentationStyle = UIModalPresentationFormSheet;
+        [detailNavigationController presentModalViewController:aLoginController animated:YES];
+    }
+    else{
+        // put up a logged in notification.
+        [SCAUtilities notifyLoggedIn];
+    }
     return YES;
 }
 

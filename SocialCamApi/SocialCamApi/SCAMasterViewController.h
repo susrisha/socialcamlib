@@ -13,5 +13,6 @@
 @interface SCAMasterViewController : UITableViewController
 
 @property (strong, nonatomic) SCADetailViewController *detailViewController;
+@property (strong,nonatomic) UISplitViewController *mainSplitController;
 
 @end
