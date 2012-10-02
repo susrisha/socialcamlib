@@ -12,7 +12,8 @@
 #import "SCAUtilities.h"
 #import "SCAUserProfileViewController.h"
 #import "SCAVideoListViewController.h"
-
+#import "SCAUserListViewController.h"
+#import "SCAVideodetailViewController.h"
 
 @interface SCAMasterViewController () {
     NSMutableArray *_objects;
@@ -124,7 +125,7 @@
     NSString *action5 = [NSString stringWithFormat:@"users/self/likes"];
     NSString *action6 = [NSString stringWithFormat:@"users/:id/followers"];
     NSString *action7 = [NSString stringWithFormat:@"users/:id/following"];
-    NSString *action8 = [NSString stringWithFormat:@"videos/id"];
+    NSString *action8 = [NSString stringWithFormat:@"videos/id"]; //yx4pX1iv
     NSString *action9 = [NSString stringWithFormat:@"videos/id/comments"];
     NSString *action10 = [NSString stringWithFormat:@"videos/id/likes"];
     NSString *action11 = [NSString stringWithFormat:@"tags/tag-name"];
@@ -161,7 +162,7 @@
         case 0:
         {
             SCAUserProfileViewController *aUserProfileController= [[SCAUserProfileViewController alloc]initWithNibName:@"SCAUserProfileViewController" bundle:nil];
-            aUserProfileController.userIdentifier = @"8SlaDUIr";
+            aUserProfileController.userIdentifier = @"vK41asGs";
             detailViewManager.detailViewController = aUserProfileController;
             
         }
@@ -192,6 +193,27 @@
             SCAVideoListViewController *aVideoListController = [[SCAVideoListViewController alloc]initWithNibName:@"SCAVideoListViewController" bundle:nil];
             aVideoListController.videosPath = @"users/self/likes";
             detailViewManager.detailViewController = aVideoListController;
+        }
+            break;
+        case 5:
+        {
+            SCAUserListViewController *aUserListViewController = [[SCAUserListViewController alloc]initWithNibName:@"SCAUserListViewController" bundle:nil];
+            aUserListViewController.userlistPath = @"users/vK41asGs/followers";
+            detailViewManager.detailViewController = aUserListViewController;
+        }
+            break;
+        case 6:
+        {
+            SCAUserListViewController *aUserListViewController = [[SCAUserListViewController alloc]initWithNibName:@"SCAUserListViewController" bundle:nil];
+            aUserListViewController.userlistPath = @"users/vK41asGs/following";
+            detailViewManager.detailViewController = aUserListViewController;
+        }
+            break;
+        case 7:
+        {
+            SCAVideodetailViewController *aVideoDetailView = [[SCAVideodetailViewController alloc]initWithNibName:@"SCAVideodetailViewController" bundle:nil];
+            aVideoDetailView.videoId = @"yx4pX1iv";//@"users/vK41asGs/following";
+            detailViewManager.detailViewController = aVideoDetailView;
         }
             break;
             

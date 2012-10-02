@@ -8,13 +8,14 @@
 
 #import "MKNetworkEngine.h"
 #import "User.h"
-
+#import "SocialCamVideo.h"
 @interface SocialCamEngine : MKNetworkEngine
 typedef void (^SocialCamEngineVideosBlock)(NSMutableArray* videoObjects);
 typedef void (^SocialCamEngineUser)(User* theUser);
 typedef void (^SocialCamUsersArray)(NSMutableArray *userObjects);
 typedef void (^SocialCamCommentsArray)(NSMutableArray *commentObjects);
 typedef void (^SocialCamGenericDict)(NSDictionary *responseDict);
+typedef void (^SocialCamVideoObj)(SocialCamVideo *videoObj);
 +(SocialCamEngine *)sharedEngine;
 
 -(void)videosForPath:(NSString *)path onCompletion:(SocialCamEngineVideosBlock)videosBlock onError:(MKNKErrorBlock) errorBlock;
@@ -28,4 +29,6 @@ typedef void (^SocialCamGenericDict)(NSDictionary *responseDict);
 -(void)postCommentForVideo:(NSString*)videoId withText:(NSString*)commentText onCompletion:(SocialCamGenericDict)responseBlock onError:(MKNKErrorBlock)errorBlock;
 
 -(void)userListforPath:(NSString*)apiPath onCompletion:(SocialCamUsersArray)usersArray onError:(MKNKErrorBlock)errorBlock;
+
+-(void)videoWithId:(NSString*)videoId onCompletion:(SocialCamVideoObj)theVideoBlock onError:(MKNKErrorBlock)errorBlock;
 @end

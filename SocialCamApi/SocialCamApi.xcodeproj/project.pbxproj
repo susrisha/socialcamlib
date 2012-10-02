@@ -17,6 +17,10 @@
 		CF1F2E29160993E900B94276 /* SCADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2E28160993E900B94276 /* SCADetailViewController.m */; };
 		CF1F2E2C160993E900B94276 /* SCAMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2A160993E900B94276 /* SCAMasterViewController.xib */; };
 		CF1F2E2F160993E900B94276 /* SCADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2E2D160993E900B94276 /* SCADetailViewController.xib */; };
+		CF8EBBB0161B181C00DC11D3 /* SCAUserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8EBBAE161B181C00DC11D3 /* SCAUserListViewController.m */; };
+		CF8EBBB1161B181C00DC11D3 /* SCAUserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8EBBAF161B181C00DC11D3 /* SCAUserListViewController.xib */; };
+		CF8EBBB6161B1CA600DC11D3 /* SCAVideodetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8EBBB4161B1CA600DC11D3 /* SCAVideodetailViewController.m */; };
+		CF8EBBB7161B1CA600DC11D3 /* SCAVideodetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8EBBB5161B1CA600DC11D3 /* SCAVideodetailViewController.xib */; };
 		CF909C47160EECC700B0C1EA /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C35160EECC700B0C1EA /* NSDate+RFC1123.m */; };
 		CF909C48160EECC700B0C1EA /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C37160EECC700B0C1EA /* NSData+Base64.m */; };
 		CF909C49160EECC700B0C1EA /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CF909C39160EECC700B0C1EA /* NSDictionary+RequestEncoding.m */; };
@@ -67,6 +71,12 @@
 		CF1F2E28160993E900B94276 /* SCADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCADetailViewController.m; sourceTree = "<group>"; };
 		CF1F2E2B160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCAMasterViewController.xib; sourceTree = "<group>"; };
 		CF1F2E2E160993E900B94276 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCADetailViewController.xib; sourceTree = "<group>"; };
+		CF8EBBAD161B181C00DC11D3 /* SCAUserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAUserListViewController.h; sourceTree = "<group>"; };
+		CF8EBBAE161B181C00DC11D3 /* SCAUserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAUserListViewController.m; sourceTree = "<group>"; };
+		CF8EBBAF161B181C00DC11D3 /* SCAUserListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAUserListViewController.xib; sourceTree = "<group>"; };
+		CF8EBBB3161B1CA600DC11D3 /* SCAVideodetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAVideodetailViewController.h; sourceTree = "<group>"; };
+		CF8EBBB4161B1CA600DC11D3 /* SCAVideodetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAVideodetailViewController.m; sourceTree = "<group>"; };
+		CF8EBBB5161B1CA600DC11D3 /* SCAVideodetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAVideodetailViewController.xib; sourceTree = "<group>"; };
 		CF909C34160EECC700B0C1EA /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
 		CF909C35160EECC700B0C1EA /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
 		CF909C36160EECC700B0C1EA /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -198,6 +208,12 @@
 				CF9133B2160F5DC5003E0F2A /* SCAVideoListViewController.h */,
 				CF9133B3160F5DC5003E0F2A /* SCAVideoListViewController.m */,
 				CF9133B4160F5DC5003E0F2A /* SCAVideoListViewController.xib */,
+				CF8EBBAD161B181C00DC11D3 /* SCAUserListViewController.h */,
+				CF8EBBAE161B181C00DC11D3 /* SCAUserListViewController.m */,
+				CF8EBBAF161B181C00DC11D3 /* SCAUserListViewController.xib */,
+				CF8EBBB3161B1CA600DC11D3 /* SCAVideodetailViewController.h */,
+				CF8EBBB4161B1CA600DC11D3 /* SCAVideodetailViewController.m */,
+				CF8EBBB5161B1CA600DC11D3 /* SCAVideodetailViewController.xib */,
 			);
 			path = SocialCamApi;
 			sourceTree = "<group>";
@@ -327,6 +343,8 @@
 				CF909C7F160F095400B0C1EA /* LoginViewController.xib in Resources */,
 				CF909C8C160F3A8000B0C1EA /* SCAUserProfileViewController.xib in Resources */,
 				CF9133B6160F5DC6003E0F2A /* SCAVideoListViewController.xib in Resources */,
+				CF8EBBB1161B181C00DC11D3 /* SCAUserListViewController.xib in Resources */,
+				CF8EBBB7161B1CA600DC11D3 /* SCAVideodetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +383,8 @@
 				CF909C93160F420E00B0C1EA /* DetailViewManager.m in Sources */,
 				CF909C96160F4D6700B0C1EA /* LoadingIndicator.m in Sources */,
 				CF9133B5160F5DC6003E0F2A /* SCAVideoListViewController.m in Sources */,
+				CF8EBBB0161B181C00DC11D3 /* SCAUserListViewController.m in Sources */,
+				CF8EBBB6161B1CA600DC11D3 /* SCAVideodetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

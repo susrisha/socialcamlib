@@ -140,6 +140,22 @@ SocialCamEngine *_sharedObj;
     
 }
 
+-(void)videoWithId:(NSString*)videoId onCompletion:(SocialCamVideoObj)theVideoBlock onError:(MKNKErrorBlock)errorBlock
+{
+    NSString *path = [NSString stringWithFormat:@"videos/%@?access_token=%@",videoId,[SCAUtilities getAccessToken]];
+    MKNetworkOperation *op = [self operationWithPath:path params:nil httpMethod:@"GET"];
+    [op onCompletion:^(MKNetworkOperation *completedOperation) {
+        NSDictionary *response = [[completedOperation responseJSON]objectForKey:@"data"];
+        SocialCamVideo *gotVideo = [[SocialCamVideo alloc]initWithDictionary:response];
+        theVideoBlock(gotVideo);
+    } onError:^(NSError *error) {
+        errorBlock(error);
+        
+    }];
+    [self enqueueOperation:op];
+    
+}
+
 
 
 -(void)postCommentForVideo:(NSString*)videoId withText:(NSString*)commentText onCompletion:(SocialCamGenericDict)responseBlock onError:(MKNKErrorBlock)errorBlock
